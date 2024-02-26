@@ -1,13 +1,14 @@
 {% extends "base.html" %}
-
+{% load crispy_forms_tags %}
 
 {% block content %}
-    <!-- <h2>{{ form_title }}</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Submit</button>
-    </form> -->
+    
 
-    <p>form is here</p>
+    <hr/>
+    <form action="" method="post" autocomplete="off">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    
 {% endblock content %}
